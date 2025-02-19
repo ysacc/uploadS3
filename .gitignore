@@ -1,0 +1,7 @@
+# Ignorar entornos virtuales
+.venv/
+env/
+venv/
+
+# Ignorar credenciales
+.env

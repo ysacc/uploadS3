@@ -23,7 +23,7 @@ def subir_a_s3(archivo_local, clave_s3):
     """Sube un archivo a S3."""
     try:
         s3.upload_file(archivo_local, BUCKET_NAME, clave_s3)
-        print(f"✅ Archivo '{archivo_local}' subido a 's3://{BUCKET_NAME}/{clave_s3}'")
+        print(f"✅ Archivo '{archivo_local}' usa esta ruta 'https://videosincidentes.amazonaws.com/{clave_s3}'")
         return f"s3://{BUCKET_NAME}/{clave_s3}"
     except Exception as e:
         print(f"❌ Error al subir el archivo: {e}")
